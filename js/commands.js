@@ -1,5 +1,5 @@
 var instagram = "https://www.instagram.com/kenny.dd/";
-var linkedin = "https://www.linkedin/in/kennyndang/";
+var linkedin = "https://www.linkedin.com/in/kennyndang/";
 var github = "https://www.github.com/kenny-dd/";
 var email = "mailto:ynneknd@gmail.com";
 var repo = "https://www.github.com/kenny-dd/terminalSite"
