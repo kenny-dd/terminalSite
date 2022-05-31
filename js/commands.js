@@ -70,6 +70,7 @@ banner = [
   '<span class="indent">----</span>',
   '<span class="color2">welcome to my first interactive web terminal.</span>',
   '<span class="color2">for a list of available commands, type</span> <span class="command">\'help\'</span><span class="color2">.</span>',
+  '<span class="color2">click the flashing cursor to type.</span>',
   '<span class="indent">----</span>',
   '<br>'
 ];
