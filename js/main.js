@@ -16,15 +16,6 @@ setTimeout(function () {
 
 window.addEventListener("keyup", enterKey);
 
-console.log(
-  "%cYou hacked my password!ðŸ˜ ",
-  "color: #04ff00; font-weight: bold; font-size: 24px;"
-);
-console.log(
-  "%cPassword: '" + password + "' - I wonder what it does?ðŸ¤”",
-  "color: grey"
-);
-
 //init
 textarea.value = "";
 command.innerHTML = textarea.value;
@@ -59,7 +50,7 @@ function enterKey(e) {
       commands.push(command.innerHTML);
       git = commands.length;
       addLine(
-        "guest@term.k4nny.com:~$ " + command.innerHTML,
+        "guest@k4nny.term.com:~$ " + command.innerHTML,
         "no-animation",
         0
       );
@@ -95,21 +86,16 @@ function commander(cmd) {
     case "whoami":
       loopLines(whoami, "color2 margin", 80);
       break;
-    case "video":
-      addLine("Opening YouTube...", "color2", 80);
-      newTab(youtube);
-      break;
     case "sudo":
-      addLine("Oh no, you're not admin...", "color2", 80);
-      setTimeout(function () {
-        window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
-      }, 500);
+      addLine("oh no, you're not admin...", "color2", 80);
+      newTab("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
       break;
     case "social":
       loopLines(social, "color2 margin", 80);
       break;
     case "projects":
-      loopLines(projects, "color2 margin", 80);
+      addLine("opening Github profile...", "color2", 80);
+      newTab(github);
       break;
     case "history":
       addLine("<br>", "", 0);
@@ -153,6 +139,9 @@ function commander(cmd) {
     case "date":
       addLine(date(), "color2", 80);
       break;
+    case city:
+      addLine("test", "color2", 80);
+      break;
     default:
       addLine(
         '<span class="inherit">Command not found. For a list of commands, type <span class="command">\'help\'</span>.</span>',
@@ -166,7 +155,7 @@ function commander(cmd) {
 function newTab(link) {
   setTimeout(function () {
     window.open(link, "_blank");
-  }, 500);
+  }, 600);
 }
 
 function addLine(text, style, time) {
@@ -195,3 +184,4 @@ function loopLines(name, style, time) {
     addLine(item, style, index * time);
   });
 }
+
