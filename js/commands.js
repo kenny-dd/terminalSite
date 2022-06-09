@@ -3,7 +3,7 @@ var linkedin = "https://www.linkedin.com/in/kennyndang/";
 var github = "https://www.github.com/kenny-dd/";
 var email = "mailto:ynneknd@gmail.com";
 var repo = "https://www.github.com/kenny-dd/terminalSite";
-var portfolioSite = "https://www.youtube.com";
+//var portfolioSite = "https://www.youtube.com";
 
 whois = [
   "<br>",
