@@ -67,7 +67,7 @@ banner = [
   '<span class="indent">----</span>',
   '<span class="color2">welcome to my first interactive web terminal.</span>',
   '<span class="color2">for a list of available commands, type</span> <span class="command">\'help\'</span><span class="color2">.</span>',
-  '<span class="indent">----</span>',
+  //'<span class="indent">----</span>',
   //'<span class="color2">for my simplified portfolio, click </span><a target="_blank" href="'+ portfolioSite + '">\'here\'</a><span class="color2">.</span>',
   '<span class="indent">----</span>',
   '<span class="color2">click the flashing cursor to type.</span>',
